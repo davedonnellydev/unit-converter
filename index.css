@@ -1,3 +1,97 @@
+:root {
+    --background-color: #F4F4F4;
+
+    --primary-color: #6943FF;
+    --secondary-color: #B295FF;
+
+    --primary-font-color: #353535;
+    --secondary-font-color: #FFFFFF;
+    --tertiary-font-color: #5A537B;
+
+    --primary-font: "Inter", Arial, sans-serif;
+
+}
+
 body {
-    margin: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: var(--primary-font-color);
+    font-family: var(--primary-font);
+    max-width: 550px;
+}
+
+h2 {
+    color: var(--secondary-font-color);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+section {
+    background-color: var(--secondary-font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+#num-input {
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    width: 100px;
+    padding: 10px 0;
+    font-family: var(--primary-font);
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    color: var(--secondary-font-color);
+    text-align: center;
+}
+
+#convert-btn {
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondary-font-color);
+    width: 100px;
+    margin: 20px;
+    padding: 10px 0;
+    font-weight: 200;
+}
+
+#results-container {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.section-heading {
+    color: var(--tertiary-font-color);
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.results-text {
+    font-size: 0.7em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 5px;;
 }
