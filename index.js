@@ -20,7 +20,7 @@ const toValues = {
 }
 
 function convertInput() {
-    const fromValue = document.querySelector("#num-input").value
+    const fromValue = document.querySelector("#num-input").value ? document.querySelector("#num-input").value : 0
 
     toValues.feet = Number(fromValue) * 3.28084
     toValues.meters = Number(fromValue) * 0.3048
